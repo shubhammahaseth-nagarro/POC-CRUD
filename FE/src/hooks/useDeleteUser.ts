@@ -1,4 +1,3 @@
-// hooks/useDeleteUser.ts
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { graphqlClient } from "../lib/graphqlClient";
 import { gql } from "graphql-request";

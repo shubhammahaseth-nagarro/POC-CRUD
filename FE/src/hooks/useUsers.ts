@@ -1,4 +1,3 @@
-// hooks/useUsers.ts
 import { useQuery } from "@tanstack/react-query";
 import { graphqlClient } from "../lib/graphqlClient";
 import { gql } from "graphql-request";
