@@ -3,6 +3,7 @@ import { useUsers } from "./hooks/useUsers";
 import { useCreateUser } from "./hooks/useCreateUser";
 import { useDeleteUser } from "./hooks/useDeleteUser";
 import { useUpdateUser } from "./hooks/useUpdateUser";
+import Counter from "./Counter";
 
 function App() {
   const { data: users, isLoading, isError, error } = useUsers();
@@ -111,7 +112,6 @@ function App() {
       ) : (
         <p>No users found.</p>
       )}
-
       <h2>{editingUser ? "Edit User" : "Add User"}</h2>
       <form onSubmit={editingUser ? handleUpdateSubmit : handleCreateSubmit}>
         <div>
@@ -155,6 +155,7 @@ function App() {
           </button>
         )}
       </form>
+      <Counter />
     </div>
   );
 }
