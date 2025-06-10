@@ -81,7 +81,9 @@ const schema = new GraphQLSchema({
 });
 
 const resetData = () => {
-  users = [{ id: 1, name: "John Doe", email: "john@example.com" }];
+  users = [
+    { id: 1, name: "Shubham Mahaseth", email: "shubhammahaseth@example.com" },
+  ];
 };
 
 module.exports = { schema, resetData };
